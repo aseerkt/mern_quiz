@@ -1,0 +1,5 @@
+export const REGISTER_SUCCESS = 'REGISTER_SUCCESS';
+export const REGISTER_FAIL = 'REGISTER_FAIL';
+
+export const RETURN_ERRORS = 'RETURN_ERRORS';
+export const CLEAR_ERRORS = 'CLEAR_ERRORS';

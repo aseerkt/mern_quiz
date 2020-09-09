@@ -1,0 +1,38 @@
+{
+  "name": "mern-quiz-react",
+  "version": "1.0.0",
+  "description": "MERN Quiz Application",
+  "main": "server.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node server",
+    "server": "cross-env NODE_ENV=development nodemon server",
+    "client": "cross-env NODE_ENV=production npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aseerkt/mern_quiz.git"
+  },
+  "author": "Aseer KT",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aseerkt/mern_quiz/issues"
+  },
+  "homepage": "https://github.com/aseerkt/mern_quiz#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^5.3.0",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "mongoose": "^5.10.3",
+    "morgan": "^1.10.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "nodemon": "^2.0.4"
+  }
+}
