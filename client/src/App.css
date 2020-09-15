@@ -1,0 +1,28 @@
+.app-home {
+  max-width: 100vw;
+  min-height: 100vh;
+  background-image: url(bg.jpg), linear-gradient(black, gray);
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.home-container {
+  color: white;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.part-btn,
+.make-btn {
+  margin: 4px;
+  border-radius: 0;
+}

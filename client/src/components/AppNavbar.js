@@ -1,31 +1,35 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import {
   Container,
   Navbar,
-  NavbarBrand,
   NavbarToggler,
   Collapse,
   NavItem,
-  NavLink,
   Nav,
 } from 'reactstrap';
-import RegisterModal from './modals/RegisterModal';
 
 function AppNavbar() {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = (e) => setIsOpen(!isOpen);
   return (
-    <Navbar color='dark' dark expand='sm'>
+    <Navbar className='app-navbar sticky-top' color='dark' dark expand='sm'>
       <Container>
-        <NavbarBrand href='/'>MERN Quiz App</NavbarBrand>
+        <NavLink className='navbar-brand' to='/'>
+          MERN Quiz App
+        </NavLink>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className='ml-auto' navbar>
             <NavItem>
-              <RegisterModal />
+              <NavLink className='nav-link' to='/login'>
+                Login
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href='#'>Login x</NavLink>
+              <NavLink className='nav-link' to='/register'>
+                Register
+              </NavLink>
             </NavItem>
           </Nav>
         </Collapse>
